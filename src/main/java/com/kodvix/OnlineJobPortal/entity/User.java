@@ -34,12 +34,14 @@ public class User {
     private boolean isVerified; //user identity verified or not
     private Date createdAt;
 
-//    @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
-//    private Freelancer freelancer;
-//
-//    @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
-//    private JobSeeker jobSeeker;
+    @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
+    private Freelancer freelancer;
 
+    @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
+    private JobSeeker jobSeeker;
+
+    @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
+    private Admin admin;
 
     @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
     private Recruiter recruiter;
