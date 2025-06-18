@@ -47,6 +47,7 @@ public class UserServiceImpl implements UserService {
         user.setEmail(userDto.getEmail());
         user.setPassword(userDto.getPassword());
         user.setConfirmPassword(userDto.getConfirmPassword());
+        user.setDateOfBirth(userDto.getDateOfBirth());
         user.setPhoneNumber(userDto.getPhoneNumber());
         user.setCountry(userDto.getCountry());
         user.setState(userDto.getState());

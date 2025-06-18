@@ -31,6 +31,9 @@ public class UserRegisterDto {
     @NotBlank(message = "Confirm password cannot be blank")
     private String confirmPassword;
 
+    @NotNull(message = "Date of birth cannot be null")
+    private String dateOfBirth;
+
     @NotBlank(message = "Phone number cannot be blank")
     @Pattern(regexp = "^[6-9]\\d{9}$", message = "Phone number must be valid 10-digit Indian number")
     private String phoneNumber;

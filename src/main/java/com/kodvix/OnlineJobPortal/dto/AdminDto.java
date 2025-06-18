@@ -11,11 +11,11 @@ import lombok.Setter;
 
 public class AdminDto {
 
-    @NotNull(message = "Name is required")
+    @NotNull(message = "Name cannot be null")
     private String name;
-    @NotNull(message = "Email is required")
+    @NotNull(message = "Email cannot be null")
     private String email;
-    @NotNull(message = "ContactNo is required")
+    @NotNull(message = "contactNumber cannot be null")
     private String contactNumber;
 
     @NotNull(message = "UserId is required")

@@ -16,22 +16,19 @@ public class Freelancer {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long freelancerId;
-    @NotNull(message = "First name is required")
-    private String firstName;
-    @NotNull(message = "Last name is required")
-    private String lastName;
-    @NotNull(message = "Email is required")
-    private String email;
-    @NotNull(message = "Phone no. is required")
-    private String phoneNo;
-    @NotNull(message = "Resume is required")
+    @NotNull(message = "Resume cannot be null")
     private String uploadResume;
-    @NotNull(message = "Date of birth is required")
-    private String dateOfBirth;
+    @NotNull(message = "Skills cannot be null")
     private String skills;
+    private String preferedDomain;
+    private String expectedHourlyPayRate;
+    @NotNull(message = "ProfileSummary cannot be null")
+    private String profileSummary;
+    private String portfolioLink;
+    @NotNull(message = "Education cannot be null")
     private String education;
+    @NotNull(message = "Experience cannot be null")
     private String experience;
-    private String address;
 
     @NotNull(message = "User cannot be null")
     @OneToOne

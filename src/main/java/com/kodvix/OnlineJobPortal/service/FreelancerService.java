@@ -2,6 +2,8 @@ package com.kodvix.OnlineJobPortal.service;
 
 import com.kodvix.OnlineJobPortal.dto.FreelancerDto;
 import com.kodvix.OnlineJobPortal.entity.Freelancer;
+import org.modelmapper.ModelMapper;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

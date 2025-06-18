@@ -16,11 +16,11 @@ public class Admin {
         @Id
         @GeneratedValue(strategy = GenerationType.AUTO)
         private Long adminId;
-        @NotNull(message = "Name is required")
+        @NotNull(message = "Name cannot be null")
         private String name;
-        @NotNull(message = "Email is required")
+        @NotNull(message = "Email cannot be null")
         private String email;
-        @NotNull(message = "ContactNumber is required")
+        @NotNull(message = "ContactNumber cannot be null")
         private String contactNumber;
 
         @NotNull(message = "User cannot be null")

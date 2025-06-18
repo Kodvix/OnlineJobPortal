@@ -9,7 +9,7 @@ public class OnlineJobPortalApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(OnlineJobPortalApplication.class, args);
 
-		System.out.println("Running my online_job_portaal");
+		System.out.println("Running my online_job_portal");
 
 	}
 
